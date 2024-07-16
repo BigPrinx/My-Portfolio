@@ -1,0 +1,363 @@
+/* Reset and General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #000000, #343a40); /* Black gradient background */
+    color: #fff; /* White text */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #000000, #ffd700); /* Black to gold gradient */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.sidebar-toggle {
+    display: none; /* Initially hide sidebar toggle button */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffc107; /* Yellow hover color */
+}
+
+/* Hero Section Styles */
+#hero img {
+    max-width: 100%;
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Spacing between image and text */
+}
+
+
+#hero {
+    background-color: transparent; /* Transparent background */
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+#hero .btn-primary {
+    background-color: #ffc107; /* Yellow button color */
+    border-color: #ffc107;
+    color: #343a40; /* Dark text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    color: #343a40; /* Dark text */
+}
+
+/* Projects Section Styles */
+.projects-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.projects-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project-item {
+    margin-bottom: 40px;
+    text-align: center; /* Center align content */
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Spacing between image and text */
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-item .btn-primary {
+    background-color: #ffc107; /* Yellow button color */
+    border-color: #ffc107;
+    color: #343a40; /* Dark text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-item .btn-primary:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    color: #343a40; /* Dark text */
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.about-section img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+p   background-color: #ffc107; /* Yellow background for skills */
+    color: #343a40; /* Dark text */
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    border-radius: 5px;
+}
+
+/* Testimonials Section Styles */
+#testimonials {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#testimonials .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.blockquote {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.blockquote p {
+    font-style: italic;
+}
+
+.blockquote footer {
+    font-weight: bold;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .btn-primary {
+    background-color: #ffc107; /* Yellow button color */
+    border-color: #ffc107;
+    color: #343a40; /* Dark text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    color: #343a40; /* Dark text */
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Footer Section Styles */
+footer {
+    background: linear-gradient(to right, #000000, #ffc107); /* Black-gold gradient */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: 1rem;
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff; /* White text */
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    color: #ffc107; /* Yellow hover color */
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Initially hidden */
+    padding: 10px 20px;
+    background-color: #ffc107; /* Yellow button color */
+    color: #343a40; /* Dark text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    color: #343a40; /* Dark text */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        margin-right: 0;
+    }
+    .project-item {
+        text-align: center;
+    }
+    .about-section img {
+        margin: 0 auto 30px;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-links a {
+        margin: 0 15px;
+    }
+
+    /* Responsive Sidebar Toggle Styles */
+    .sidebar-toggle {
+        display: block; /* Show sidebar toggle button */
+        margin-right: 15px;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        left: -100%; /* Initially off-screen */
+        height: 100vh;
+        width: 250px;
+        background: #343a40; /* Dark background color */
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        left: 0; /* Slide in when active */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.5rem;
+    }
+}
+
